@@ -2,3 +2,22 @@
     width: 275px;
     height: 240px;
 }
+
+.hr_product{
+    width: 30%;
+    border: 2px solid black;
+}
+
+.product_container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 65px;
+    row-gap: 70px;
+}
+
+.add_to_cart_button{
+    background-color: #bf7631;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+}
