@@ -1,15 +1,22 @@
 .header_container{
     display:grid;
     grid-template-columns: auto auto auto;
-    column-gap: 100px;
-    gap: 100px;
-    padding: 80px;
+    grid-template-rows:0px;
+    padding: 15px;
     align-items: center;
+    font-family:'Segoe UI';
+    font-weight: lighter;
+    letter-spacing: 50;
+}
+
+.header_image{
+    width: 20px;
+    height: 20px;
+    vertical-align:text-top;
 }
 
 nav li{
     display: inline;
-    font-weight:200;
 }
 
 nav li a{
@@ -18,12 +25,15 @@ nav li a{
     padding: 10px;
 }
 
-.header_image{
-    width: 20px;
-    height: 20px;
+.header_break{
+    width: 79%;
+    height: 4px;
+    background-color: black;
+    align-self: center;
+    
 }
 
-body{
+body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
