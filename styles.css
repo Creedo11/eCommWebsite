@@ -1,3 +1,16 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
 .header_container{
     display:grid;
     grid-template-columns: auto auto auto;
@@ -5,13 +18,11 @@
     padding: 15px;
     align-items: center;
     font-family:'Segoe UI';
-    font-weight: lighter;
-    letter-spacing: 50;
 }
 
 .header_image{
-    width: 20px;
-    height: 20px;
+    width: 13px;
+    height: 13px;
     vertical-align:text-top;
 }
 
@@ -26,12 +37,41 @@ nav li a{
 }
 
 .header_break{
-    width: 79%;
-    height: 4px;
+    width: 76%;
+    height: 5px;
     background-color: black;
-    align-self: center;
-    
+    margin-left: 12%;
+    margin-right: 12%;
 }
+
+.home{
+    height: 571px;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgb(0, 0, 0)), linear-gradient(to left, rgba(0,0,0,0), rgb(0, 0, 0)), url("assets/earl-wilcox-y3W0CzO063w-unsplash-alt.jpg");
+    background-size:cover;
+    background-position: absolute;
+}
+
+.home_left{
+    position: absolute;
+    text-align: left;
+    font-size: 30px;
+    margin-top: 100px;
+    margin-left: 100px;
+    font-family:'Segoe UI';
+    color: white;
+}
+
+.home_right{
+    position: absolute;
+    text-align: right;
+    margin-left: 1700px;
+    margin-top: 450px;
+    font-size: 30px;
+    font-family:'Segoe UI';
+    color: white;
+}
+
 
 body {
     padding: 0;
@@ -40,10 +80,6 @@ body {
     text-align: center;
 }
 
-.home{
-    background-image: url("assets/earl-wilcox-y3W0CzO063w-unsplash-alt.jpg");
-    background-size: cover;
-}
 
 .product_image{
     width: 275px;
